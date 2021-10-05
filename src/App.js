@@ -10,6 +10,7 @@ import Home from './component/Home/Home';
 import About from './component/About/About';
 import Service from './component/Service/Service';
 import CourseDetail from './component/CourseDetail/CourseDetail';
+import Contact from './component/Contact/Contact';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
 
           <Route exact path='/Service'>
 <Service></Service>
+          </Route>
+          <Route exact path='/contact'>
+<Contact></Contact>
           </Route>
           <Route  path='/course/:courseId'>
            <CourseDetail></CourseDetail>

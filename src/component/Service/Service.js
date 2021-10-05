@@ -14,8 +14,8 @@ useEffect(() => {
 }, []);
     return (
        <div className="mt-5">
-           
-            <Row xs={1} md={3} className="g-4">
+              <h1 className="m-2 display-5 fw-bold mb-5">All Courses</h1>
+            <Row xs={1} md={3} className="g-4 p-5">
               
             {
                     courses.map(course =>

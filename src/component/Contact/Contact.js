@@ -1,10 +1,10 @@
 import React from 'react';
 
-const About = () => {
+const Contact = () => {
     return (
-        <div className="mt-5 pb-5">
+         <div className="mt-5 pb-5">
             
-          <h1 className="text-center mb-5">About Us.</h1>
+          <h1 className="text-center mb-5">Contact Us.</h1>
             <img src="logo.png" alt="logo" className='logo' rounded />
             <div className="mt-5 pb-5">
                 
@@ -15,4 +15,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Contact;

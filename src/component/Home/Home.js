@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from 'react';
 import {  Row } from "react-bootstrap";
+import Bannar from "../Bannar/Bannar";
 import Course from "../Course/Course";
 
 const Home = () => {
@@ -10,15 +11,19 @@ const Home = () => {
 useEffect(() => {
     fetch('./service.json')
         .then(res => res.json())
-        .then(data => setcourses(data));
+        .then(data => setcourses(data.slice(0,4)));
 }, []);
 
     
     return (
 
-        <div className="mt-5">
-           
-            <Row xs={1} md={2} className="g-4">
+        <div>
+<Bannar></Bannar>
+       
+        <div className="mt-3 p-5">
+           <h1 className="m-2 display-5 fw-bold mb-5">Our Courses</h1>
+                <Row xs={1} md={2} className="g-4">
+                    
               
             {
                     courses.map(course =>
@@ -29,7 +34,8 @@ useEffect(() => {
             }
             
             </Row>
-        </div>
+            </div>
+             </div>
     );
 };
 

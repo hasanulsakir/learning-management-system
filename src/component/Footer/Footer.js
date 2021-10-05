@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
     return (
         <div className="buttom">
-            <p className="text-center">@Copywrite AiMCQ 2021</p>
+            <p className="text-center copyrightText">© 2021 AiMCQ</p>
         </div>
     );
 };

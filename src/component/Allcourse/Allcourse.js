@@ -1,10 +1,15 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Button, Card, Col } from 'react-bootstrap';
+import { useHistory } from 'react-router-dom';
 
 const Allcourse = (props) => {
         const { id, title, author_name, cover_img, price } = props.course;
-    const url = `/course/${id}`
+  // const url = `/course/${id}`;
+  const history = useHistory();
+  const detailsCourse = () => {
+    
+    history.push(`/course/${id}`);
+  }
     return (
                  
   <Col>
@@ -15,7 +20,7 @@ const Allcourse = (props) => {
                    
                     <p>Author Name: {author_name}</p>
                     <p>Price: ${price}</p>
-                    <Link to={url}>visit</Link>
+                      <Button onClick={detailsCourse}>Details</Button>
           
           
         </Card.Body>

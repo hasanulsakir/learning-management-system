@@ -13,20 +13,21 @@ const Header = () => {
         }
     return (
         
- <Navbar bg="dark" variant="dark">
+ <Navbar bg="dark" variant="dark" sticky="top">
             <Container fluid>
-                <Row>
-                    <Col lg="4" >
+                <Row className="mx-auto">
+                    <Col lg="3" >
                           <NavLink to="/Home" className='navbar-brand ' activeStyle={activeStyle}>
-                    <Image src="logo.png"className='logo' rounded /> </NavLink>
+                    <Image src="logo.png"className='logo'  /> </NavLink>
                     </Col>
 
-                    <Col lg="8">
+                    <Col lg="9">
                           
-    <Nav className="justify-content-between">
+    <Nav className="justify-content-between me-auto" >
     <NavLink to="/Home"  className="navMenu"  activeStyle={activeStyle}>  Home</NavLink>
-    <NavLink to="/About" className="navMenu"  activeStyle={activeStyle}>  About</NavLink>
+    <NavLink to="/About" className="navMenu"  activeStyle={activeStyle}>  About US</NavLink>
     <NavLink to="/Service" className="navMenu"  activeStyle={activeStyle}>  Services</NavLink>
+    <NavLink to="/contact" className="navMenu"  activeStyle={activeStyle}>  Contatc Us</NavLink>
        </Nav>
                     </Col>
                     </Row>

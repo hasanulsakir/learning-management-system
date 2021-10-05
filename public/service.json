@@ -30,5 +30,21 @@
     "author_img": "https://elearni.wpengine.com/wp-content/uploads/avatars/12/5c51526e375cf-bpfull.jpg",
     "cover_img": "https://elearni.wpengine.com/wp-content/uploads/2017/11/course-21.jpg",
     "price": 20
+  },
+  {
+    "id": 5,
+    "title": "Introduction to e-commerce",
+    "author_name": "Jason Statemen",
+    "author_img": "https://elearni.wpengine.com/wp-content/uploads/avatars/12/5c51526e375cf-bpfull.jpg",
+    "cover_img": "https://elearni.wpengine.com/wp-content/uploads/2017/11/course-21.jpg",
+    "price": 20
+  },
+  {
+    "id": 6,
+    "title": "Introduction to e-commerce",
+    "author_name": "Jason Statemen",
+    "author_img": "https://elearni.wpengine.com/wp-content/uploads/avatars/12/5c51526e375cf-bpfull.jpg",
+    "cover_img": "https://elearni.wpengine.com/wp-content/uploads/2017/11/course-21.jpg",
+    "price": 20
   }
 ]
